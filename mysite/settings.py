@@ -83,12 +83,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+#数据库配置，**替换为自己数据库的信息，该为MySQL数据库
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mysite_db',
-        'USER': 'root',
-        'PASSWORD': 'test123456',
+        'NAME': '******',  #数据库名
+        'USER': 'root',    #数据库用户名
+        'PASSWORD': 'test123456',   #数据库密码
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -117,6 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
+#中文配置及亚洲时区
 LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
@@ -136,11 +138,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-# media
+# media文件位置配置
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
-# 配置ckeditor
+# 配置ckeditor，富文本编辑器
 CKEDITOR_UPLOAD_PATH = 'upload/'
 CKEDITOR_JQUERY_URL = 'https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'
 CKEDITOR_IMAGE_BACKEND = 'PIL'
@@ -191,21 +193,21 @@ CACHES = {
     }
 }
 
-# 发送邮件设置
+# 发送邮件设置（改为自己的邮箱信息），由于阿里云默认不支持25端口，所以启用465端口
 # http://docs.djangoproject.com/en/2.0/ref/settings/#email
 # http://docs.djangoproject.com/en/2.0/topics/email/
 '''
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_POST = 25
-EMAIL_HOST_USER = '524919247@qq.com'
-EMAIL_HOST_PASSWORD = 'ydmlaxytdxhmbhib' # 授权码
+EMAIL_HOST_USER = '********@qq.com'
+EMAIL_HOST_PASSWORD = '*******' # 授权码
 EMAIL_SUBJECT_PREFIX = '[小布丁爱蘑菇的博客]'
 EMAIL_USE_TLS = True # 与SMTP服务器通信时，是否启动TLS链接（安全链接）
 '''
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.qq.com'  # 如果是 163 改成 smtp.163.com
 EMAIL_PORT = 465
-EMAIL_HOST_USER = '524919247@qq.com' # 帐号
-EMAIL_HOST_PASSWORD = 'ydmlaxytdxhmbhib'  # 密码
+EMAIL_HOST_USER = '******@qq.com' # 帐号
+EMAIL_HOST_PASSWORD = '********'  # 密码
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
