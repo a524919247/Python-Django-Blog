@@ -1,0 +1,108 @@
+ul.blog-types{
+    list-style: none;
+}
+div.blog:not(:last-child){
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eeeeee;
+}
+div.blog.h3{
+    margin-top: 0.5em;
+}
+div.blog p.blog-info{
+    margin-bottom: 0;
+    margin-right: 2em;
+}
+div.paginator{
+    text-align: center;
+}
+
+ul.blog-info-description{
+    list-style: none;
+    margin-bottom: 1em;
+}
+ul.blog-info-description li{
+    display: inline-block;
+    margin-right: 1em;
+}
+div.blog-content{
+    margin-bottom: 2em;
+}
+div.blog-content img{
+    padding: 0px;
+}
+div.blog-more{
+    margin-top: 1em;
+}
+
+h3.comment-area-title{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 0.4em;
+}
+div.django-ckeditor-widget{
+    width: 100%;
+}
+div.comment{
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em
+;
+}
+div.reply{
+    margin-left: 2em;
+}
+div#reply_content_container{
+    border:1px solid #d1d1d1;
+    border-bottom: none;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    padding: 1em 1em 0.5em;
+}
+p#reply_title{
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 0.5em;
+}
+div.like{
+    color: #337ab7;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 0.3em;
+}
+
+div.like .active{
+    color: #f22;
+}
+.panel{
+    margin-top: 2em;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-default {
+    border-color: #ddd;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.blog_header {
+    overflow: hidden;
+    padding: 1em 0em 0em 1em;
+    background-color: #faebcc;
+}
+.panel-body {
+    padding: 15px;
+}
+.blog_content {
+    padding: 1em 1em 0;
+}
