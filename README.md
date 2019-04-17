@@ -1,3 +1,5 @@
 # Python-Django-Blog
 个人博客网站
-## 博客演示地址
+
+##采用技术
+Django2.0+Bootstrap
